@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Calculator</title>
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+
+    <div class="wrapper" id="wrapper">
+      <div class="calculator">
+
+        <!-- DARK MODE -->
+        <div class="dark-mode" id="darkBar">
+          <input type="checkbox" id="checkBox" onclick="darkMode()">
+          <p id="text"> Enable Dark Mode </p>
+        </div>
+
+        <!-- OUTPUT SCREEN -->
+        <div class="result" id="result">
+          <div class="output" id="output"></div>
+          <div class="input" id="input"></div>
+        </div>
+
+        <!-- BUTTONS -->
+        <div class="button" id="button">
+
+          <div onclick="calculate('C')" class="symbol"><span>C</span></div>
+          <div onclick="calculate('AC')" class="symbol"><span>AC</span></div>
+          <div onclick="calculate('%')" class="symbol"><span>%</span></div>
+          <div onclick="calculate('/')" class="symbol"><span>/</span></div>
+
+          <div onclick="calculate('7')"><span>7</span></div>
+          <div onclick="calculate('8')"><span>8</span></div>
+          <div onclick="calculate('9')"><span>9</span></div>
+          <div onclick="calculate('*')" class="symbol"><span>*</span></div>
+         
+          <div onclick="calculate('4')"><span>4</span></div>
+          <div onclick="calculate('5')"><span>5</span></div>
+          <div onclick="calculate('6')"><span>6</span></div>
+          <div onclick="calculate('-')" class="symbol"><span>-</span></div>
+         
+          <div onclick="calculate('1')"><span>1</span></div>
+          <div onclick="calculate('2')"><span>2</span></div>
+          <div onclick="calculate('3')"><span>3</span></div>
+          <div onclick="calculate('+')" class="symbol"><span>+</span></div>
+         
+          <div onclick="calculate('.')"><span>.</span></div>
+          <div onclick="calculate('0')"><span>0</span></div>
+          <div onclick="calculate('00')"><span>00</span></div>
+          <div onclick="calculate('=')" class="dark-symbol"><span>=</span></div>
+        
+        </div>
+      </div>
+    </div>
+
+
+    <!-- MATHS-JS CDN LINK -->
+    <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/mathjs/10.1.0/math.min.js"></script> -->
+
+    <!-- JS -->
+    <script src="./app.js"></script>
+    
+  </body>
+</html>
